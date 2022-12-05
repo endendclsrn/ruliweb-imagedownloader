@@ -1,0 +1,22 @@
+{
+    "name": "Ruliweb Image Download",
+    "description": "Made by Jagukim",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["https://*.ruliweb.com/*"],
+            "css": ["./contentScripts/style.css"],
+            "js": ["./contentScripts/script.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "action": {
+        "default_popup": "./popup/popup.html"
+    },
+    "options_page": "./options/options.html",
+    "permissions": [
+        "downloads",
+        "storage"
+    ]
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./pico.min.css">
+        <link rel="stylesheet" href="./popup.css" />
+    </head>
+    <body>
+        <div class="header">
+            <label for="check_video">
+                <input id="check_video" type="checkbox"/>
+                비디오 포함
+            </label>
+            <label for="check_preload">
+                <input id="check_preload" type="checkbox"/>
+                이미지 미리보기
+            </label>
+            <label for="check_all">
+                <input id="check_all" type="checkbox"/>
+                모두 선택
+            </label>
+        </div>
+        <div id="imglist"></div>
+        <div class="bottom">
+            <input type="text" id="dir">
+            <input type="text" id="convention" class="btn">
+        </div>
+        <input type="button" id="download" class="btn" value="다운로드">
+        <script src="./popup.js" charset="utf-8"></script>
+    </body>
+</html>
